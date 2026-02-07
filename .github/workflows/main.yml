@@ -1,0 +1,16 @@
+name: Docker Build Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build the stack
+        run: docker-compose build
+
+      - name: Verify Docker images exist
+        run: docker images
