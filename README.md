@@ -29,7 +29,7 @@ This project will be containerized and designed for deployment on CloudLab. The 
 Component: Web Server
 - Base Image: python:3.11-slim
 
-- The component provides a Debian-based environment for it's variant being "slim" which reduces the image size significanlty compared to the standard python image. From this, the benefits for using the image is speeding up deployment across the nodes inside the cloud.
+- The component provides a Debian-based environment for it's "slim" variant which reduces the image size significantly compared to the standard python image. From this, the benefits for using the image is speeding up deployment across the nodes inside the cloud.
 
 Component: Database 
 - Base Image: mongo:latest
