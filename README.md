@@ -21,7 +21,7 @@ graph LR
 ### Communication Protocol
 - Client to App: The user interacts with the system via standard HTTP/REST requests.
 
-- App to Database: The Python application communicates with MongoDB over TCP on port 27017 using the MongoDB Wire Protocol (via the PyMongo driver).
+- App to Database: The Python application communicates with MongoDB, using the MongoDB Wire Protocol (via the PyMongo driver).
 
 ## 2. Proposal
 This project will be containerized and designed for deployment on CloudLab. The following base images have been selected for their efficiency and reliability:
@@ -35,12 +35,3 @@ Component: Database
 - Base Image: mongo:latest
 
 - The official Image for MongoDB. Mainly use schema-less data storage, which is mainly ideal for rapid development and scaling within cloud environments. 
-
-## Project Structure
-Folder Structure:
-- app/: Contains the python source code and Dockerfile for the web server
-- docs/: Has the proejct documentation and the resume
-- README.md: The project's vision, proposal, and architect overview
-
-## Resume
-- Located inside the "docs/" folder named "resume.pdf"
