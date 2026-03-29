@@ -63,4 +63,4 @@ Defines the defualt command executed when the container starts.
 The MongoDB service uses the official mongo:latest image. This image is maintained by MongoDB and comes pre-configured with the database server. It listens on port 27017 by default and requires no additional setup for this project.
 
 ## 4. Networking
-This application uses a user-defined bridge network called "app-network", defined in docker-compose.yml. Allows both of the containers to communicate with each other. The webb app. connects to MongoDB using the service name as the hostname (`MongoClient("mongodb://db:27017")`). 
+This application uses a user-defined bridge network called "app-network", defined in docker-compose.yml. Allows both of the containers to communicate with each other. The webb app. connects to MongoDB using the service name as the hostname (`MongoClient("mongodb://db:27017")`). Docker's internal DNS automatically resolves db to the correct container IP at runtime. Will work the same regardless of what host machine the containers are on.
