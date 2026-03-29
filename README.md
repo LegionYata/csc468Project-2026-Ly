@@ -39,7 +39,7 @@ Component: Database
 ## 3. Build Process
 - Base Image Choice Description:
 
-The reason why this base image (python:3.11-slim) because is a pre-built and stripped down version of the python:3.11 image. The slim variant is smaller than it's counterpart (50MB vs 900MB) in which reduces the pull times and storage costs when deploying across the CloudLab nodes. Python 3.11 was chosen for it's performance improvements over earlier versions.
+The reason why this base image (python:3.11-slim) was chosen is because of being the stripped down version of the python:3.11 image. The stripped variant is smaller than it's counterpart (50MB vs 900MB worth of storage) in which reduces the pull times and storage costs when deploying across the CloudLab nodes. Python 3.11 was chosen for it's performance improvements over earlier versions.
 
 - `FROM python:3.11-slim`
 pulls in a prebuilt image of the python version.
